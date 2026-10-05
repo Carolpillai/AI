@@ -15,7 +15,7 @@ def get_gemini_client_and_model(gemini_key: Optional[str] = None) -> Tuple[Async
         api_key=key,
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
     )
-    model = settings.gemini_llm_model or "gemini-1.5-flash"
+    model = settings.gemini_llm_model or "gemini-flash-latest"
     return client, model
 
 
